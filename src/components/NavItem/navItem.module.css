@@ -1,0 +1,23 @@
+.nav-item {
+  list-style: none;
+  font-size: clamp(0.8rem, 2vw, 2rem);
+  padding: 1rem 0;
+}
+
+.nav-link {
+  color: #aba8a8;
+}
+
+.nav-link-active {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #636262;
+  border-bottom: 1px solid #636262;
+}
+
+.nav-link-active:hover {
+  color: #ffffff;
+  border-bottom: 1px solid #636262;
+}
