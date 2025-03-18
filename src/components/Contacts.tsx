@@ -1,32 +1,32 @@
 import { NavLink } from 'react-router-dom';
-
-import { FaInstagram, FaTelegramPlane, FaVk } from 'react-icons/fa';
+import { BsInstagram, BsTelegram } from 'react-icons/bs';
+import { SiVk } from 'react-icons/si';
 
 export const Contacts = () => {
   return (
-    <section
-      className={
-        "bg-[url('../src/img/nordwood-themes-R53t-Tg6J4c-unsplash.jpg')] bg-cover bg-center bg-no-repeat py-10"
-      }
-    >
+    <section className={'bg-primary-500 py-10'}>
       <div>
         <div className={'m-auto flex max-w-[90rem] flex-col items-center justify-center px-2'}>
-          <h2 className={'text-primary-600 mb-5 text-3xl font-bold tracking-tight'}>Контакты</h2>
+          <h2 className={'font-montserrat mb-5 text-lg font-thin tracking-tight text-white'}>
+            Контакты
+          </h2>
 
-          <ul className={'flex gap-x-6'}>
-            <li className={'rounded-full bg-white p-3'}>
+          <ul className={'flex items-center gap-x-6'}>
+            <li>
               <NavLink to="https://vk.ru/haritonova_love">
-                <FaVk className={'h-6 w-6'} />
+                <SiVk className={'h-6 w-6 fill-white'} />
               </NavLink>
             </li>
-            <li className={'rounded-full bg-white p-3'}>
-              <NavLink to="https://t.me/haritonova_photo">
-                <FaTelegramPlane className={'h-6 w-6'} />
-              </NavLink>
-            </li>
-            <li className={'rounded-full bg-white p-3'}>
+
+            <li className={''}>
               <NavLink to="https://www.instagram.com/haritonova_photo?igsh=MTNscm1iYWJhbGFxaA==">
-                <FaInstagram className={'h-6 w-6'} />
+                {/*<FaInstagram className={'h-4 w-4 fill-white'} />*/}
+                <BsInstagram className={'h-6 w-6 fill-white'} />
+              </NavLink>
+            </li>
+            <li className={'items-center rounded-md'}>
+              <NavLink to="https://t.me/haritonova_photo">
+                <BsTelegram className={'h-6 w-6 fill-white'} />
               </NavLink>
             </li>
           </ul>

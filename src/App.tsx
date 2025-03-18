@@ -7,6 +7,7 @@ import { Home } from './components/Home.tsx';
 import { AppContent } from './components/layout/AppContent.tsx';
 import { PhotoSlider } from './components/PhotoSlider.tsx';
 import { Contacts } from './components/Contacts.tsx';
+import { AppFooter } from './components/layout/AppFooter.tsx';
 
 export const App = () => (
   <>
@@ -15,6 +16,7 @@ export const App = () => (
       <Home />
       <PhotoSlider />
       <Contacts />
+      <AppFooter />
 
       {/*<Routes>*/}
       {/*  /!*<Route path="/photo-portfolio" element={<Home />} />*!/*/}
