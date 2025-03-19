@@ -23,58 +23,42 @@ const navItems = [
   { id: 5, title: 'Контакты', path: '/contacts' }
 ];
 
-const photos = [
+const photoSlider = [
   {
-    id: 31,
-    title: 'Свадьба',
-    src: [
-      {
-        id: 1,
-        src: 'https://sun9-38.userapi.com/impg/mh4yxsIxspBuTQjW-fC_inFPiF8fPen4tHv9Fg/PPMlvBLyWv8.jpg?size=1440x2160&quality=95&sign=d93aca01426249d2936b67ad213e7ef5&type=album'
-      },
-      {
-        id: 2,
-        src: 'https://sun9-72.userapi.com/impg/t57tP_EXfqYi6srBnRPfJjJB54TJdBq2S4vtnw/dQ4mVRqlCo4.jpg?size=2560x1707&quality=95&sign=31604fdf27f0dc0a88c051ecc53b5ad5&type=album'
-      },
-      {
-        id: 3,
-        src: 'https://sun9-61.userapi.com/impg/0b2NFG5lTaxdAtGvAJIotokQpa8tJ-hfk6O47g/6mXq2v0WJPE.jpg?size=1440x2160&quality=95&sign=b6a14814a0935fd946afcbfbcd8ee49b&type=album'
-      },
-      {
-        id: 4,
-        src: 'https://sun9-79.userapi.com/impg/15NCDRHcze4DvVPZrCgECUCTz2UdtyVZrURaYQ/TyWYR1k_2Ow.jpg?size=2560x1707&quality=95&sign=e2e4b0b21ff3f796d2ea90fd4ae4f7d0&type=album'
-      },
-      {
-        id: 5,
-        src: 'https://sun9-20.userapi.com/impg/J9JJGCmYEgglCyZWDpACcM-ebwQEvnv04aK-iA/YUExdcvkMsw.jpg?size=1500x1999&quality=95&sign=72489e07cf9bc8ec6524479ec70c36a8&type=album'
-      }
-    ]
+    src: new URL('../img/sliderPhoto/photo_2025-03-18_18-44-16.jpg', import.meta.url),
+    alt: 'Свадебное фото'
   },
   {
-    id: 33,
-    title: 'Студия',
-    src: [
-      {
-        id: 1,
-        src: 'https://sun9-38.userapi.com/impg/mh4yxsIxspBuTQjW-fC_inFPiF8fPen4tHv9Fg/PPMlvBLyWv8.jpg?size=1440x2160&quality=95&sign=d93aca01426249d2936b67ad213e7ef5&type=album'
-      },
-      {
-        id: 2,
-        src: 'https://sun9-72.userapi.com/impg/t57tP_EXfqYi6srBnRPfJjJB54TJdBq2S4vtnw/dQ4mVRqlCo4.jpg?size=2560x1707&quality=95&sign=31604fdf27f0dc0a88c051ecc53b5ad5&type=album'
-      },
-      {
-        id: 3,
-        src: 'https://sun9-61.userapi.com/impg/0b2NFG5lTaxdAtGvAJIotokQpa8tJ-hfk6O47g/6mXq2v0WJPE.jpg?size=1440x2160&quality=95&sign=b6a14814a0935fd946afcbfbcd8ee49b&type=album'
-      },
-      {
-        id: 4,
-        src: 'https://sun9-79.userapi.com/impg/15NCDRHcze4DvVPZrCgECUCTz2UdtyVZrURaYQ/TyWYR1k_2Ow.jpg?size=2560x1707&quality=95&sign=e2e4b0b21ff3f796d2ea90fd4ae4f7d0&type=album'
-      },
-      {
-        id: 5,
-        src: 'https://sun9-20.userapi.com/impg/J9JJGCmYEgglCyZWDpACcM-ebwQEvnv04aK-iA/YUExdcvkMsw.jpg?size=1500x1999&quality=95&sign=72489e07cf9bc8ec6524479ec70c36a8&type=album'
-      }
-    ]
+    src: new URL('../img/sliderPhoto/photo_2025-03-18_18-44-29.jpg', import.meta.url),
+    alt: 'Свадебное фото'
+  },
+  {
+    src: new URL('../img/sliderPhoto/photo_2025-03-18_18-44-30.jpg', import.meta.url),
+    alt: 'Свадебное фото'
+  },
+  {
+    src: new URL('../img/sliderPhoto/photo_2025-03-18_18-47-36.jpg', import.meta.url),
+    alt: 'Свадебное фото'
+  },
+  {
+    src: new URL('../img/sliderPhoto/photo_2025-03-18_18-47-37.jpg', import.meta.url),
+    alt: 'Свадебное фото'
+  },
+  {
+    src: new URL('../img/sliderPhoto/photo_2025-03-18_18-47-37 (2).jpg', import.meta.url),
+    alt: 'Свадебное фото'
+  },
+  {
+    src: new URL('../img/sliderPhoto/photo_2025-03-18_18-47-37 (3).jpg', import.meta.url),
+    alt: 'Свадебное фото'
+  },
+  {
+    src: new URL('../img/sliderPhoto/photo_2025-03-18_18-47-37 (4).jpg', import.meta.url),
+    alt: 'Свадебное фото'
+  },
+  {
+    src: new URL('../img/sliderPhoto/photo_2025-03-18_18-47-37 (5).jpg', import.meta.url),
+    alt: 'Свадебное фото'
   }
 ];
 
@@ -98,4 +82,4 @@ const prices = [
   { id: 43, title: 'Студия', price: 3000 }
 ];
 
-export { navItems, photos, prices };
+export { navItems, photoSlider, prices };
