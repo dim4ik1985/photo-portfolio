@@ -37,7 +37,7 @@ export const Carousel = ({
       <div className={'w-[70%] overflow-hidden'}>
         <motion.div
           initial={{ translateX: `${currentIndex}` }}
-          animate={{ translateX: `-${currentIndex * 100}%` }}
+          animate={{translateX: `-${currentIndex * 100}%`}}
           className={`flex transition-transform duration-500 ease-out`}
         >
           {slides}

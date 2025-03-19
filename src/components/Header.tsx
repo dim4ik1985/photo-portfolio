@@ -1,14 +1,12 @@
-import photo from '../img/photo_2025-03-18_18-06-59.jpg';
-
 export const Header = () => {
   return (
     <header className={'bg-primary-500 w-full'}>
       <div className={'m-auto grid max-w-[90rem] grid-cols-2 items-center gap-2 px-6 py-12'}>
-        <img
-          src={photo}
-          alt="photo"
-          className={'h-30 w-30 justify-self-center rounded-full object-cover'}
-        />
+        {/*<img*/}
+        {/*  src={photo}*/}
+        {/*  alt="photo"*/}
+        {/*  className={'h-30 w-30 justify-self-center rounded-full object-cover'}*/}
+        {/*/>*/}
 
         <div className={'flex flex-col gap-3'}>
           <h1 className={'font-raleway text-xl font-medium tracking-tight text-white'}>
