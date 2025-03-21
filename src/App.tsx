@@ -1,27 +1,36 @@
-// import { Routes, Route } from 'react-router-dom';
-// import { AppHeader } from './components/layout/AppHeader.tsx';
+import { Routes, Route } from 'react-router-dom';
+
 import { Header } from './components/Header.tsx';
-// import { Portfolio } from './pages/Portfolio.tsx';
-import { AppContent } from './components/layout/AppContent.tsx';
+import { Portfolio } from './pages/Portfolio.tsx';
+
 import { PhotoSlider } from './components/PhotoSlider.tsx';
 import { Contacts } from './components/Contacts.tsx';
 import { AppFooter } from './components/layout/AppFooter.tsx';
+// import { PortfolioNavigate } from './components/PortfolioNavigate.tsx';
+import { Home } from './pages/Home.tsx';
+import { Nav } from './components/Nav/Nav.tsx';
+import { MobileMenuContextProvider } from './context/MobileMenuContext.tsx';
+import { MobileMenu } from './components/MobileMenu/MobileMenu.tsx';
+import { AboutMe } from './components/AboutMe.tsx';
 
 export const App = () => (
-  <>
-    <AppContent>
-      {/*<AppHeader />*/}
-      <Header />
-      <PhotoSlider />
-      <Contacts />
-      <AppFooter />
-
-      {/*<Routes>*/}
-      {/*  /!*<Route path="/photo-portfolio" element={<Header />} />*!/*/}
-
-      {/*  <Route path="/portfolio/:id" element={<Portfolio />} />*/}
-
-      {/*</Routes>*/}
-    </AppContent>
-  </>
+  <MobileMenuContextProvider>
+    <Nav />
+    <Routes>
+      <Route
+        path={'/photo-portfolio'}
+        element={
+          <Home>
+            <Header />
+            <PhotoSlider />
+            <AboutMe />
+          </Home>
+        }
+      />
+      <Route path="/portfolio/:id" element={<Portfolio />} />
+    </Routes>
+    <Contacts />
+    <AppFooter />
+    <MobileMenu />
+  </MobileMenuContextProvider>
 );

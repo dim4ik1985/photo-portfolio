@@ -15,7 +15,7 @@ export const Nav = () => {
         </ul>
         <div className={'flex justify-end'}>
           <IoIosMenu
-            className={'fill-primary-50 h-10 w-10 cursor-pointer stroke-1 lg:hidden'}
+            className={'h-10 w-10 cursor-pointer fill-primary-50 stroke-1 lg:hidden'}
             onClick={() => setIsMobileMenuOpen(true)}
           />
         </div>

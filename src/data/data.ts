@@ -1,17 +1,12 @@
 const navItems = [
-  { id: 2, title: 'Обо мне', path: '/about' },
+  { id: 1, title: 'На главную', path: '/photo-portfolio' },
   {
-    id: 3,
+    id: 2,
     title: 'Портфолио',
-    path: '#',
-    submenu: [
-      { id: 31, title: 'Свадьба', path: '/portfolio' },
-      { id: 32, title: 'Репортаж', path: '/portfolio' },
-      { id: 33, title: 'Студия', path: '/portfolio' }
-    ]
+    path: '/portfolio/1'
   },
   {
-    id: 4,
+    id: 3,
     title: 'Прайс',
     path: '#',
     submenu: [
@@ -20,7 +15,7 @@ const navItems = [
       { id: 43, title: 'Студия', path: '/prices' }
     ]
   },
-  { id: 5, title: 'Контакты', path: '/contacts' }
+  { id: 4, title: 'Контакты', path: 'contacts' }
 ];
 
 const photoSlider = [

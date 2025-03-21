@@ -1,30 +1,40 @@
+import { motion } from 'motion/react';
+
 export const Header = () => {
   return (
     <header className={'bg-primary-500 w-full'}>
-      <div className={'m-auto grid max-w-[90rem] grid-cols-2 items-center gap-2 px-6 py-12'}>
-        {/*<img*/}
-        {/*  src={photo}*/}
-        {/*  alt="photo"*/}
-        {/*  className={'h-30 w-30 justify-self-center rounded-full object-cover'}*/}
-        {/*/>*/}
-
-        <div className={'flex flex-col gap-3'}>
-          <h1 className={'font-raleway text-xl font-medium tracking-tight text-white'}>
+      <div
+        className={
+          'm-auto mb-10 flex max-w-[90rem] flex-col items-start gap-2 px-6 md:px-8 md:py-12'
+        }
+      >
+        <div className={'flex max-w-[45%] flex-col gap-3'}>
+          <motion.h1
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
+            className={
+              'font-raleway text-primary-50 text-xl font-light tracking-tight md:text-2xl lg:text-4xl'
+            }
+          >
             Любовь Харитонова
-          </h1>
-          <p className={'font-montserrat text-xs text-white md:text-base'}>
+          </motion.h1>
+          <motion.p className={'font-montserrat text-primary-50 text-xs md:text-base'}>
             Нижний Новгород <span className={'px-1 min-[319px]:px-2'}>|</span> Москва
             <span className={'px-1 min-[315px]:px-2'}>|</span> Мир
-          </p>
+          </motion.p>
         </div>
       </div>
-      <p
+      <motion.p
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, ease: 'easeInOut' }}
         className={
-          'font-montserrat pb-15 text-center text-lg/loose font-thin tracking-tight text-white'
+          'font-montserrat pb-10 text-center text-lg/loose font-thin tracking-tight text-white'
         }
       >
         Амбассадор ваших эмоций
-      </p>
+      </motion.p>
     </header>
   );
 };
