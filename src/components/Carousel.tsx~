@@ -111,8 +111,8 @@ export const Carousel = ({
 
         <motion.div
           key={nextIndex}
-          initial={{ scale: 0.5 }}
-          animate={{ scale: 1 }}
+          initial={{ scale: 1 }}
+          animate={{ scale: 0.5 }}
           transition={{ duration: 0.7, ease: 'easeInOut' }}
           className={'hidden h-[20rem] self-center opacity-25 lg:block xl:h-[25rem]'}
         >

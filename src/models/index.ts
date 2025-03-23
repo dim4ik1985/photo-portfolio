@@ -1,10 +1,9 @@
-export interface INavItemProps {
-  item: {
-    id: number;
-    title: string;
-    path?: string;
-    submenu?: { id: number; title: string; path: string }[];
-  };
+export interface INavigateItemProps {
+  id: number;
+  title: string;
+  path?: string;
+  submenu?: { id: number; title: string; path: string }[];
+  anchor?: string;
 }
 
 export interface IData {

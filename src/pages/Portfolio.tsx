@@ -1,15 +1,14 @@
 import { useParams } from 'react-router-dom';
-import { photoSlider } from '../data/data.ts';
+
 import { motion } from 'motion/react';
+import { PortfolioList } from '../components/Porfolio/PortfolioList.tsx';
 
 export const Portfolio = () => {
   const { id } = useParams();
-  if (id === '1') {
-    console.log(id);
-  }
+
   return (
     <section className={'bg-primary-500 w-full'}>
-      <div className={'px-4'}>
+      <div className={'m-auto max-w-[90rem] px-4'}>
         <motion.h2
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
@@ -18,14 +17,7 @@ export const Portfolio = () => {
         >
           Portfolio
         </motion.h2>
-
-        <ul className={'flex flex-col gap-6'}>
-          {photoSlider.map((item, index) => (
-            <li key={index}>
-              <img src={`${item.src}`} alt={item.alt} />
-            </li>
-          ))}
-        </ul>
+        <PortfolioList id={id} />
       </div>
     </section>
   );
